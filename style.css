@@ -281,7 +281,6 @@ body {
 .footer-list {
     display: flex;
     gap: 835.5px;
-    align-items: baseline;
 }
 
 .footer-logo {
@@ -296,4 +295,6 @@ body {
     line-height: 18px;
     letter-spacing: 0.1px;
     font-weight: 700;
+    padding-top: 19px;
+    padding-bottom: 29px;
 }
