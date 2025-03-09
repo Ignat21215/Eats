@@ -35,17 +35,18 @@ body {
     display: flex;
     align-content: center;
     justify-content: space-between;
+    padding-right: 49px;
 }
 
 .header-logo {
-    width: 150px;
-    height: 65.21px;
+    padding-top: 49px;
+    padding-bottom: 41.27px;
 }
 
 .nav-list {
     display: flex;
     gap: 94px;
-    align-content: baseline;
+    padding-top: 54px;
 }
 
 .nav-link:hover {
@@ -62,10 +63,7 @@ body {
 }
 
 .hero {
-    color: var(--hero-bg-color);
-}
-
-.hero-container {
+    background-color: var(--hero-bg-color);
     text-align: center;
 }
 
@@ -87,6 +85,8 @@ body {
     line-height: 80px;
     letter-spacing: 0.2px;
     padding-bottom: 9.89px;
+    max-width: 799px;
+    margin: 0 auto;
 }
 
 .hero-desc {
@@ -133,6 +133,7 @@ body {
     padding-right: 71px;
     display: flex;
     padding-bottom: 190.78px;
+    flex-wrap: wrap;
 }
 
 .app-item {
@@ -141,12 +142,9 @@ body {
     align-items: center;
 }
 
-.app-item-container-left {
-    padding-top: 213.03px;
-}
-
 .app-item:nth-child(2) {
     flex-direction: row-reverse;
+    padding-top: 222px;
 }
 
 .app-title {
@@ -177,6 +175,7 @@ body {
     font-weight: 700;
     letter-spacing: 0.2px;
     padding-bottom: 17px;
+    width: 561px;
 }
 
 .app-desk {
@@ -185,11 +184,11 @@ body {
     font-weight: 500;
     line-height: 38px;
     letter-spacing: 0.2px;
+    max-width: 480px;
 }
 
 .order {
-    background-image: url(./images/order-bg.png);
-    height: 509px;
+    background-color: var(--order-bg-color);
     text-align: center;
 }
 
@@ -214,9 +213,9 @@ body {
 
 .order-list {
     display: flex;
-    margin: 0 auto;
     gap: 16px;
-    width: 331px;
+    justify-content: center;
+    padding-bottom: 130px;
 }
 
 .order-btn {
@@ -228,8 +227,10 @@ body {
     letter-spacing: 0.2px;
     border-width: 0;
     border-radius: 10px;
-    width: 142px;
-    height: 64px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 31px;
+    padding-right: 31px;
 }
 
 .second-button-order {
@@ -242,8 +243,6 @@ body {
     border-width: 1px;
     border-color: var(--hero-title-color);
     border-style: solid;
-    width: 173px;
-    height: 60px;
 }
 
 .footer {
@@ -251,20 +250,12 @@ body {
 }
 
 .footer-container {
+    display: flex;
     background-color: var(--hero-title-color);
     padding-left: 24px;
     padding-top: 114px;
     padding-bottom: 58px;
-}
-
-.footer-list {
-    display: flex;
-    gap: 835.5px;
-}
-
-.footer-logo {
-    width: 150px;
-    height: 65.21px;
+    justify-content: space-between;
 }
 
 .footer-desc {
