@@ -9,6 +9,8 @@
     --font-family: "Montserrat", sans-serif;
     --second-family: "Poppins", sans-serif;
     --third-family: "Roboto", sans-serif;
+    --hero-bg-color: rgba(23, 16, 16, 0.6);
+    --order-bg-color:rgba(37, 43, 66, 0.4);
 }
 
 * {
@@ -21,7 +23,7 @@ body {
 }
 
 .container {
-    width: 1350px;
+    width: 1210px;
     margin: 0 auto;
 }
 
