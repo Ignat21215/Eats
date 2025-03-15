@@ -33,9 +33,8 @@ body {
 
 .header-container {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: space-between;
-    padding-right: 49px;
 }
 
 .header-logo {
@@ -46,7 +45,6 @@ body {
 .nav-list {
     display: flex;
     gap: 94px;
-    padding-top: 54px;
 }
 
 .nav-link:hover {
