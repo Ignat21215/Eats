@@ -10,7 +10,21 @@
     --second-family: "Poppins", sans-serif;
     --third-family: "Roboto", sans-serif;
     --hero-bg-color: rgba(23, 16, 16, 0.6);
-    --order-bg-color:rgba(37, 43, 66, 0.4);
+    --order-bg-color: rgba(37, 43, 66, 0.4);
+}
+
+.title,
+.subtitle {
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 24px;
+}
+
+.desc {
+    font-weight: 500;
+    font-size: 24px;
 }
 
 * {
@@ -20,6 +34,8 @@
 
 body {
     font-family: var(--font-family);
+    line-height: 36px;
+    letter-spacing: 0.1px;
 }
 
 .container {
@@ -29,17 +45,14 @@ body {
 
 .header {
     background-color: var(--hero-title-color);
+    padding-top: 49px;
+    padding-bottom: 41.27px;
 }
 
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.header-logo {
-    padding-top: 49px;
-    padding-bottom: 41.27px;
 }
 
 .nav-list {
@@ -58,40 +71,37 @@ body {
     line-height: 28px;
     letter-spacing: 0.2px;
     padding: 10px 10px 10px 10px;
+    display: inline-block;
 }
 
 .hero {
     background-color: var(--hero-bg-color);
     text-align: center;
+    padding-top: 79px;
+    padding-bottom: 162px;
+    background-image: url(./images/hero-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-subtitle {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 0.1px;
     color: var(--hero-subtitle-color);
-    padding-bottom: 10px;
-    padding-top: 79px;
+    padding-bottom: 1px;
 }
 
 .hero-title {
     font-family: var(--second-family);
     color: var(--hero-title-color);
     font-size: 58px;
-    font-weight: 700;
     line-height: 80px;
     letter-spacing: 0.2px;
-    padding-bottom: 9.89px;
-    max-width: 799px;
     margin: 0 auto;
 }
 
 .hero-desc {
-    padding-bottom: 78px;
+    padding-bottom: 54px;
     color: var(--hero-subtitle-color);
-    font-size: 24px;
-    font-weight: 500;
     letter-spacing: 0.2px;
     line-height: 38px;
 }
@@ -99,7 +109,6 @@ body {
 .hero-list {
     display: flex;
     gap: 67px;
-    padding-bottom: 162px;
     justify-content: center;
 }
 
@@ -107,42 +116,43 @@ body {
 .hero-button {
     color: var(--hero-title-color);
     font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 0.1px;
-    padding-top: 16px;
-    padding-bottom: 16px;
     background-color: var(--hover-color);
-    padding-left: 58.5px;
-    padding-right: 58.5px;
+    padding: 16px 58px 16px 73px;
     border-width: 0;
     border-radius: 30px;
+    font-weight: 700;
 }
 
-.second-button-hero {
+.second-hero-button {
     border-width: 1px;
     border-color: var(--hero-title-color);
     border-style: solid;
     background-color: transparent;
+    padding-inline: 82px;
+}
+
+.app {
+    padding-top: 56px;
+    padding-bottom: 190.78px;
 }
 
 .app-list {
     padding-left: 84px;
     padding-right: 71px;
     display: flex;
-    padding-bottom: 190.78px;
     flex-wrap: wrap;
+    gap: 108px;
 }
 
 .app-item {
     display: flex;
-    gap: 280px;
+    gap: 287px;
     align-items: center;
 }
 
 .app-item:nth-child(2) {
     flex-direction: row-reverse;
-    padding-top: 222px;
+    gap: 250px;
 }
 
 .app-title {
@@ -150,19 +160,12 @@ body {
     color: var(--titles-color);
     font-weight: 600;
     font-size: 44px;
-    line-height: 36px;
-    letter-spacing: 0.1px;
     text-align: center;
-    padding-top: 56px;
     padding-bottom: 70px;
 }
 
 .app-subtitle {
     color: var(--hover-color);
-    line-height: 36px;
-    font-size: 24px;
-    letter-spacing: 0.1px;
-    font-weight: 700;
     padding-bottom: 7px;
 }
 
@@ -170,16 +173,12 @@ body {
     font-size: 40px;
     line-height: 57px;
     color: var(--nav-text-color);
-    font-weight: 700;
     letter-spacing: 0.2px;
     padding-bottom: 17px;
-    width: 561px;
 }
 
 .app-desk {
-    font-size: 24px;
     color: var(--app-desc-color);
-    font-weight: 500;
     line-height: 38px;
     letter-spacing: 0.2px;
     max-width: 480px;
@@ -188,15 +187,19 @@ body {
 .order {
     background-color: var(--order-bg-color);
     text-align: center;
+    padding-bottom: 131px;
+    padding-top: 140px;
+    background-image: url(./images/order-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .order-title {
     color: var(--hero-title-color);
     font-size: 40px;
     line-height: 57px;
-    font-weight: 700;
     letter-spacing: 0.2px;
-    padding-top: 131px;
     padding-bottom: 10px;
 }
 
@@ -204,7 +207,6 @@ body {
     color: var(--hero-title-color);
     font-size: 24px;
     line-height: 38px;
-    font-weight: 500;
     letter-spacing: 0.2px;
     padding-bottom: 59px;
 }
@@ -213,14 +215,12 @@ body {
     display: flex;
     gap: 16px;
     justify-content: center;
-    padding-bottom: 130px;
 }
 
 .order-btn {
     background-color: var(--hover-color);
     color: var(--hero-title-color);
     font-size: 16px;
-    line-height: 28px;
     font-weight: 700;
     letter-spacing: 0.2px;
     border-width: 0;
@@ -231,29 +231,30 @@ body {
     padding-right: 31px;
 }
 
-.second-button-order {
+.order-btn-right {
     color: var(--hero-title-color);
     font-size: 16px;
-    line-height: 28px;
     font-weight: 700;
     letter-spacing: 0.2px;
     background-color: transparent;
     border-width: 1px;
     border-color: var(--hero-title-color);
     border-style: solid;
+    padding: 16px 45px;
 }
 
 .footer {
     background-color: var(--hero-title-color);
+    padding-top: 114px;
+    padding-bottom: 58px;
 }
 
 .footer-container {
     display: flex;
     background-color: var(--hero-title-color);
     padding-left: 24px;
-    padding-top: 114px;
-    padding-bottom: 58px;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer-desc {
@@ -261,8 +262,5 @@ body {
     font-family: var(--third-family);
     font-size: 12px;
     line-height: 18px;
-    letter-spacing: 0.1px;
     font-weight: 700;
-    padding-top: 19px;
-    padding-bottom: 29px;
 }
